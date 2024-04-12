@@ -45,6 +45,10 @@
     font-size: 2rem;
   }
 
+  .introducao img {
+    display: none;
+  }
+
   .introducao h1::before {
     width: 30px;
     height: 10px;

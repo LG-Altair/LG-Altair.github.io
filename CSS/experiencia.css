@@ -39,7 +39,7 @@
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#b6f828, #67dd0a);
+  background: linear-gradient(#004AAD,#1784FF);
   position: absolute;
   top: 20px;
   left: -4px;
@@ -87,6 +87,7 @@
   }
   .experiencia .subtitulo {
     color: #141414;
+    text-transform: uppercase;
   }
   .experiencia-texto {
     font-size: 1.25rem;
