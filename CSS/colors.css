@@ -1,0 +1,21 @@
+:root {
+  --cor-primaria-1: #004aad;
+  --cor-primaria-2: #1784ff;
+  --fundo-1: #ffffff;
+  --fundo-2: #f5f5f5;
+  --fundo-3: #141414;
+  --texto-1: #141414;
+  --texto-2: #525252;
+  --texto-3: #f5f5f5;
+}
+
+[data-theme="dark"] {
+  --cor-primaria-1: #004aad;
+  --cor-primaria-2: #1784ff;
+  --fundo-1: #000000;
+  --fundo-2: #141414;
+  --fundo-3: #ffffff;
+  --texto-1: #f5f5f5;
+  --texto-2: #525252;
+  --texto-3: #141414;
+}

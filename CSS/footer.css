@@ -1,5 +1,5 @@
 .footer {
-  background: #000000;
+  background: var(--fundo-1);
 }
 
 .footer-container {
@@ -16,14 +16,14 @@
 .footer-texto {
   font-size: 1.5rem;
   line-height: 1.33;
-  color: #8f8f8f;
+  color: var(--texto-2);
 }
 
 .footer-contato li {
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.1;
-  color: #ffffff;
+  color: var(--texto-1);
   margin-bottom: 10px;
 }
 

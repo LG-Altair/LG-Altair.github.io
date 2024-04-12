@@ -6,6 +6,7 @@
   grid-template-columns: 4fr 8fr;
   gap: 100px;
   align-items: center;
+  background: var(--fundo-1);
 }
 
 .introducao h1 {
@@ -29,7 +30,7 @@
 
 .introducao p {
   font-size: 1.5rem;
-  color: #525252;
+  color: var(--texto-2);
 }
 
 @media (max-width: 1000px) {

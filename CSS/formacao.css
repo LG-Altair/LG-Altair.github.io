@@ -1,6 +1,8 @@
+@import "colors.css";
+
 .formacao {
-  background: #141414;
-  color: #ffffff;
+  background: var(--fundo-3);
+  color: var(--texto-3);;
 }
 
 .formacao-container {
@@ -24,7 +26,7 @@
 }
 
 .formacao .subtitulo {
-  color: #a3a3a3;
+  color: var(--texto-2);
 }
 
 .formacao-texto {
@@ -32,11 +34,11 @@
   line-height: 1.33;
   margin-bottom: 60px;
   max-width: 40ch;
-  color: #a3a3a3;
+  color: var(--texto-3);
 }
 
 .formacao strong {
-  color: #ffffff;
+  color: var(--texto-3);
 }
 
 .curso-lista {
@@ -47,7 +49,7 @@
 }
 
 .curso {
-  background: #000;
+  background: var(--fundo-3);
   flex: 1;
   padding: 20px;
   border-radius: 5px;
@@ -58,7 +60,7 @@
 .curso-tipo {
   font-size: 0.875rem;
   text-transform: uppercase;
-  color: #a3a3a3;
+  color: var(--texto-3);
   margin-bottom: 10px;
 }
 
@@ -74,14 +76,14 @@
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#004AAD,#1784FF);
+  background: linear-gradient(var(--cor-primaria-1),var(--cor-primaria-2));
   position: absolute;
   left: -24px;
 }
 
 .curso-instituicao {
   font-size: 1.125rem;
-  color: #a3a3a3;
+  color: var(--cor-primaria-2);
 }
 
 .cursos {
@@ -91,7 +93,7 @@
 .formacao-extra h3 {
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #8f8f8f;
+  color: var(--cor-primaria-2);
   text-transform: uppercase;
   margin-bottom: 10px;
   position: relative;
@@ -123,7 +125,7 @@
     gap: 40px;
   }
   .formacao .subtitulo {
-    color: #ffffff;
+    color: var(--texto-3);
     text-transform: uppercase;
   }
 

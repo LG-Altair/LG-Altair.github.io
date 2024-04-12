@@ -1,146 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Ferreira - Desenvolvedor e Designer</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="icon" href="/Images/detalhe.svg" type="image/svg+xml" />
+    <script src="/Javascript/ColorScheme/identify_color-scheme.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucas Ferreira - Desenvolvedor e Designer</title>
-  <link rel="stylesheet" href="/CSS/style.css" />
-  <link rel="icon" href="/Images/detalhe.svg" type="image/svg+xml">
-</head>
+  <body>
+    <script src="/Javascript/ColorScheme/toggle_color-scheme.js"></script>
+    <header class="header">
+        <img src="/Images/Logo Lucas Ferreira.svg" alt="Logo" class="logo" />
+        <nav>
+          <ul class="header-menu">
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li>
+              <button type="button" onclick="switchTheme();">Tema</button>
+            </li>
+          </ul>
+        </nav>
+    </header>
 
-<body>
-  <header class="header">
-    <img src="/Images/Logo Lucas Ferreira.svg" alt="Logo" class="logo" />
-    <nav>
-      <ul class="header-menu">
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="introducao">
-    <img src="/Images/Lucas Perfil.jpg" alt="Foto de Perfil" />
-    <div>
-      <h1>
-        Desesnvolvidor <br />
-        Front End <br />& UX/UI Designer
-      </h1>
-      <p>Localizado no Rio de Janeiro.</p>
-    </div>
-  </main>
-
-  <section class="experiencia" id="experiencia" aria-label="experiencia">
-    <h2 class="subtitulo">Expe<br />riên<br />cia</h2>
-    <div>
-      <p class="experiencia-texto">
-        Desenvolvo pequenos projetos utilizando
-        <strong>HTML</strong>, <strong>CSS</strong> e
-        <strong>JavaScript</strong> para aplicações web.
-        Embora iniciante, possuo <strong>imensa capacidade de aprendizado</strong> e estou sempre <strong>renovando meu conhecimento</strong>
-      </p>
-
-      <div class="empresa">
-        <span class="empresa-ano">2022-2024</span>
-        <h3 class="empresa-titulo">Loja Nova Canaã</h3>
-        <span class="empresa-titulo">Auxiliar Administrativo</span>
-        <p class="empresa-texto">
-          Responsável pela organização de documentos e formatação, criar
-          planilhas, controle de estoque, organização do escritório.
-        </p>
-        <ul class="empresa-habilidades">
-          <li>Excel</li>
-          <li>Word</li>
-          <li>Relatórios</li>
-          <li>Organização</li>
-        </ul>
-      </div>
-
-      <div class="empresa">
-        <span class="empresa-ano">2022</span>
-        <h3 class="empresa-titulo">Lojas Americanas</h3>
-        <span class="empresa-titulo">Operador de Loja</span>
-        <p class="empresa-texto">
-          Responsável pela organização do salão de vendas, abertura e
-          fechamento de caixa, conferência de mercadorias.
-        </p>
-        <ul class="empresa-habilidades">
-          <li>Estoque</li>
-          <li>Vendas</li>
-          <li>Conferência</li>
-          <li>Organização</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="formacao" id="formacao" aria-label="Formação">
-    <div class="formacao-container">
-      <h2 class="subtitulo">For<br />ma<br />ção</h2>
+    <main class="introducao">
+      <img src="/Images/Lucas Perfil.jpg" alt="Foto de Perfil" />
       <div>
-        <p class="formacao-texto">
-          Estudante do <strong>Curso Origamid</strong>, onde eu estou
-          aprendendo a elaborar <strong>Front End</strong> e códigos de
-          <strong>HTML</strong> e <strong>CSS.</strong>
+        <h1>
+          Desesnvolvidor <br />
+          Front End <br />& UX/UI Designer
+        </h1>
+        <p>Localizado no Rio de Janeiro.</p>
+      </div>
+    </main>
+
+    <section class="experiencia" id="experiencia" aria-label="experiencia">
+      <h2 class="subtitulo">Expe<br />riên<br />cia</h2>
+      <div>
+        <p class="experiencia-texto">
+          Desenvolvo pequenos projetos utilizando
+          <strong>HTML</strong>, <strong>CSS</strong> e
+          <strong>JavaScript</strong> para aplicações web. Embora iniciante,
+          possuo <strong>imensa capacidade de aprendizado</strong> e estou
+          sempre <strong>renovando meu conhecimento</strong>
         </p>
 
-        <ul class="curso-lista">
-          <li class="curso">
-            <span class="curso-tipo">Técnico</span>
-            <h3 class="curso-curso">Auxiliar Administrativo</h3>
-            <span class="curso-instituicao">Senac</span>
-          </li>
-          <li class="curso">
-            <span class="curso-tipo">Técnico</span>
-            <h3 class="curso-curso">Guia de Turismo</h3>
-            <span class="curso-instituicao">Senac</span>
-          </li>
-          <li class="curso">
-            <span class="curso-tipo">Informática</span>
-            <h3 class="curso-curso">Web Designer</h3>
-            <span class="curso-instituicao">Origamid</span>
-          </li>
-          <li class="curso">
-            <span class="curso-tipo">Informática</span>
-            <h3 class="curso-curso">Ninja do Excel</h3>
-            <span class="curso-instituicao">Ninja do Excel</span>
-          </li>
-        </ul>
+        <div class="empresa">
+          <span class="empresa-ano">2022-2024</span>
+          <h3 class="empresa-titulo">Loja Nova Canaã</h3>
+          <span class="empresa-titulo">Auxiliar Administrativo</span>
+          <p class="empresa-texto">
+            Responsável pela organização de documentos e formatação, criar
+            planilhas, controle de estoque, organização do escritório.
+          </p>
+          <ul class="empresa-habilidades">
+            <li>Excel</li>
+            <li>Word</li>
+            <li>Relatórios</li>
+            <li>Organização</li>
+          </ul>
+        </div>
 
-        <div class="formacao-extra">
-          <div class="cursos">
-            <h3>Cursos Intensivos</h3>
-            <ul>
-              <li>UX Design & UI Design<span> - 56h</span></li>
-              <li>Font End para Iniciantes<span> - 72h</span></li>
-            </ul>
-          </div>
-          <div class="idiomas">
-            <h3>idiomas</h3>
-            <ul>
-              <li>Espanhol<span>/Fluente</span></li>
-              <li>Inglês<span>/Intermediário</span></li>
-            </ul>
+        <div class="empresa">
+          <span class="empresa-ano">2022</span>
+          <h3 class="empresa-titulo">Lojas Americanas</h3>
+          <span class="empresa-titulo">Operador de Loja</span>
+          <p class="empresa-texto">
+            Responsável pela organização do salão de vendas, abertura e
+            fechamento de caixa, conferência de mercadorias.
+          </p>
+          <ul class="empresa-habilidades">
+            <li>Estoque</li>
+            <li>Vendas</li>
+            <li>Conferência</li>
+            <li>Organização</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="formacao" id="formacao" aria-label="Formação">
+      <div class="formacao-container">
+        <h2 class="subtitulo">For<br />ma<br />ção</h2>
+        <div>
+          <p class="formacao-texto">
+            Estudante do <strong>Curso Origamid</strong>, onde eu estou
+            aprendendo a elaborar <strong>Front End</strong> e códigos de
+            <strong>HTML</strong> e <strong>CSS.</strong>
+          </p>
+
+          <ul class="curso-lista">
+            <li class="curso">
+              <span class="curso-tipo">Técnico</span>
+              <h3 class="curso-curso">Auxiliar Administrativo</h3>
+              <span class="curso-instituicao">Senac</span>
+            </li>
+            <li class="curso">
+              <span class="curso-tipo">Técnico</span>
+              <h3 class="curso-curso">Guia de Turismo</h3>
+              <span class="curso-instituicao">Senac</span>
+            </li>
+            <li class="curso">
+              <span class="curso-tipo">Informática</span>
+              <h3 class="curso-curso">Web Designer</h3>
+              <span class="curso-instituicao">Origamid</span>
+            </li>
+            <li class="curso">
+              <span class="curso-tipo">Informática</span>
+              <h3 class="curso-curso">Ninja do Excel</h3>
+              <span class="curso-instituicao">Ninja do Excel</span>
+            </li>
+          </ul>
+
+          <div class="formacao-extra">
+            <div class="cursos">
+              <h3>Cursos Intensivos</h3>
+              <ul>
+                <li>UX Design & UI Design<span> - 56h</span></li>
+                <li>Font End para Iniciantes<span> - 72h</span></li>
+              </ul>
+            </div>
+            <div class="idiomas">
+              <h3>idiomas</h3>
+              <ul>
+                <li>Espanhol<span>/Fluente</span></li>
+                <li>Inglês<span>/Intermediário</span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer" id="contato">
-    <div class="footer-container">
-      <p class="footer-texto">
-        Estou disponível para novos projetos. Entre em contato e marcaremos uma
-        conversa.
-      </p>
-      <ul class="footer-contato">
-        <li>contato.lucasgpferreira@gmail.com</li>
-        <li>(21) 97032-9068</li>
-      </ul>
-    </div>
-  </footer>
-</body>
-
+    <footer class="footer" id="contato">
+      <div class="footer-container">
+        <p class="footer-texto">
+          Estou disponível para novos projetos. Entre em contato e marcaremos
+          uma conversa.
+        </p>
+        <ul class="footer-contato">
+          <li>contato.lucasgpferreira@gmail.com</li>
+          <li>(21) 97032-9068</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,7 +1,10 @@
+@import "colors.css";
+
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #141414;
+  color: var(--texto-1);
+  background: var(--fundo-1);
 }
 
 h1,
@@ -45,7 +48,7 @@ img {
     gap: 40px;
   }
   .formacao .subtitulo {
-    color: #ffffff;
+    color: var(--fundo-1);
   }
 
   .formacao-texto {
