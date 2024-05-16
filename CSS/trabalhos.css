@@ -1,0 +1,23 @@
+.container {
+  margin: 0 200px;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  align-items: center;
+  background: var(--fundo-1);
+}
+
+.titulo h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  max-width: 1200px;
+  padding: 40px 20px;
+}
+
+.titulo h2 {
+  font-size: 1.5rem;
+  line-height: 1.125;
+  max-width: 1200px;
+  padding: 5px 10px;
+  margin-top: -10px;
+  margin-left: 20px;
+}

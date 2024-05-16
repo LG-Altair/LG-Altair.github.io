@@ -9,6 +9,9 @@
   --texto-3: #f5f5f5;
 }
 
+.p1 {
+  color: #004aad;
+}
 [data-theme="dark"] {
   --cor-primaria-1: #004aad;
   --cor-primaria-2: #1784ff;
