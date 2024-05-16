@@ -2,7 +2,7 @@
 
 .formacao {
   background: var(--fundo-3);
-  color: var(--texto-3);;
+  color: var(--texto-3);
 }
 
 .formacao-container {
@@ -76,7 +76,7 @@
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(var(--cor-primaria-1),var(--cor-primaria-2));
+  background: linear-gradient(var(--cor-primaria-1), var(--cor-primaria-2));
   position: absolute;
   left: -24px;
 }
