@@ -1,12 +1,13 @@
 @import "colors.css";
 
 .header {
-  padding: 40px 200px;
+  padding: 40px 60px;
   margin: 0 auto;
+  height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--fundo-1);
+  background: linear-gradient(135deg, #1784ff, #004aad);
 }
 
 .logo {
@@ -64,9 +65,11 @@
     flex-direction: column;
     gap: 40px;
     padding: 20px;
+    background: linear-gradient(135deg, #004aad, #1784ff);
   }
   .header-menu {
-    background: var(--fundo-1);
+    background: linear-gradient(135deg, #004aad, #1784ff);
+
     border-radius: 5px;
   }
 }

@@ -8,6 +8,9 @@
   align-items: center;
   background: var(--fundo-1);
 }
+.introducao img {
+  border-radius: 5px;
+}
 
 .introducao h1 {
   font-size: 4.5rem;
