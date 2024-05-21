@@ -1,3 +1,7 @@
+body {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
 .introducao {
   max-width: 1200px;
   padding: 40px 20px;
@@ -10,6 +14,7 @@
 }
 .introducao img {
   border-radius: 5px;
+  box-shadow: 5px 5px 5px #555;
 }
 
 .introducao h1 {
@@ -35,6 +40,16 @@
   font-size: 1.5rem;
   color: var(--texto-2);
   width: 400px;
+  position: relative;
+}
+
+.introducao p::before {
+  content: "";
+  width: 100px;
+  height: 4px;
+  margin-top: -8px;
+  background: #1784ff;
+  position: absolute;
 }
 
 @media (max-width: 1000px) {
