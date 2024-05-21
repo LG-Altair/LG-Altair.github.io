@@ -34,6 +34,7 @@
 .introducao p {
   font-size: 1.5rem;
   color: var(--texto-2);
+  width: 400px;
 }
 
 @media (max-width: 1000px) {

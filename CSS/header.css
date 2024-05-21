@@ -54,7 +54,7 @@
 .header-menu a.ativo::after {
   border-bottom: 4px solid #004aad;
   transition: 0.03s;
-  width: 82%;
+  width: 81%;
 }
 
 .header-menu button {
