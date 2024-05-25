@@ -31,7 +31,6 @@
   padding: 5px 10px;
   max-width: 400px;
   border-radius: 4px;
-
   text-decoration: none;
   color: var(--texto-1);
   display: inline-block;
@@ -64,28 +63,75 @@
   border-radius: 4px;
   text-decoration: none;
   color: var(--texto-1);
-  display: inline-block;
+  display: grid;
+  background: none;
   border: none;
-  background: var(--cor-primaria-2);
-  border: 4px solid transparent;
 }
 
 .header-menu button:hover {
-  background: var(--cor-primaria-1);
   transition: 0.03s;
   cursor: pointer;
+  background:none
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .header {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 40px;
-    padding: 20px;
-    background: linear-gradient(135deg, #004aad, #1784ff);
+    padding: 0px 20px;
+    max-width: 100%;
+    height: 100px;
+    background: linear-gradient(10deg, var(--fundo-1), #1784ff);
   }
-  .header-menu {
-    background: linear-gradient(135deg, #004aad, #1784ff);
+  .header-menu a, .header-menu button{
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: 2;
+    background: none;
+    font-size: 1rem;
+  }
 
-    border-radius: 5px;
+  .logo {
+    display: grid;
+    grid-template-rows: 1;
+    width: 100px;
+  }
+}
+
+@media (max-width: 445px) {
+  .header {
+    display: grid;
+    gap: 20px;
+    padding: 0px 20px;
+    max-width: 100%;
+    height: 125px;
+    background: linear-gradient(10deg, var(--fundo-1), #1784ff);
+  }
+  .header-menu a, .header-menu button{
+    max-width: 100%;
+    display: inline-block;
+    grid-template-rows: 2;
+    background: none;
+    font-size: 0.75rem;
+  }
+
+
+  .header-menu button:hover{
+    border: none;
+    background: none;
+  }
+
+  .header-menu a:hover::after, .header-menu a.ativo::after {
+  border-bottom: 4px solid #004aad;
+  transition: 0.03s;
+  width: 72%;
+}
+
+  .logo {
+    display: flex;
+    justify-self: center;
+    width: 100px;
   }
 }

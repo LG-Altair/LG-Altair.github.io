@@ -2,6 +2,8 @@
   background: var(--fundo-4);
 }
 
+
+
 .footer-container {
   max-width: 1200px;
   padding: 120px 20px 60px 20px;
@@ -20,11 +22,17 @@
 }
 
 .footer-contato li {
+  text-decoration: none;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.1;
   color: var(--texto-1);
   margin-bottom: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--texto-1);
 }
 
 @media (max-width: 800px) {
@@ -33,6 +41,6 @@
     gap: 40px;
   }
   .footer-contato li {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
