@@ -33,7 +33,7 @@
   border-radius: 4px;
   text-decoration: none;
   color: var(--texto-1);
-  display: inline-block;
+  display: block;
   border-bottom: 4px solid transparent;
   position: relative;
 }
@@ -49,11 +49,10 @@
   position: absolute;
 }
 
-.header-menu a:hover::after,
-.header-menu a.ativo::after {
-  border-bottom: 4px solid #004aad;
+.header-menu a:hover::after {
+  border-bottom: 3px solid #004aad;
   transition: 0.03s;
-  width: 81%;
+  width: 80%;
 }
 
 .header-menu button {
@@ -71,7 +70,7 @@
 .header-menu button:hover {
   transition: 0.03s;
   cursor: pointer;
-  background:none
+  background: none;
 }
 
 @media (max-width: 900px) {
@@ -85,22 +84,40 @@
     height: 100px;
     background: linear-gradient(10deg, var(--fundo-1), #1784ff);
   }
-  .header-menu a, .header-menu button{
+  .header-menu a {
     max-width: 100%;
     display: grid;
     grid-template-rows: 2;
     background: none;
     font-size: 1rem;
+    position: relative;
+    border-bottom: solid 4px transparent;
+  }
+  .header-menu a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: var(--cor-0);
+    margin-top: 4px;
+    transition: ease-in 0.03s;
+    position: absolute;
+  }
+
+  .header-menu a:hover::after {
+    border-bottom: none;
+    transition: 0.03s;
+    width: 75%;
   }
 
   .logo {
-    display: grid;
-    grid-template-rows: 1;
+    display: flex;
+    justify-self: center;
     width: 100px;
   }
 }
 
-@media (max-width: 445px) {
+@media (max-width: 450px) {
   .header {
     display: grid;
     gap: 20px;
@@ -109,7 +126,8 @@
     height: 125px;
     background: linear-gradient(10deg, var(--fundo-1), #1784ff);
   }
-  .header-menu a, .header-menu button{
+  .header-menu a,
+  .header-menu button {
     max-width: 100%;
     display: inline-block;
     grid-template-rows: 2;
@@ -117,17 +135,17 @@
     font-size: 0.75rem;
   }
 
-
-  .header-menu button:hover{
-    border: none;
+  .header-menu button:hover {
+    border-bottom: none;
     background: none;
   }
 
-  .header-menu a:hover::after, .header-menu a.ativo::after {
-  border-bottom: 4px solid #004aad;
-  transition: 0.03s;
-  width: 72%;
-}
+  .header-menu a:hover::after,
+  .header-menu a.ativo::after {
+    border-bottom: none;
+    transition: 0.03s;
+    width: 72%;
+  }
 
   .logo {
     display: flex;

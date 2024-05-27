@@ -29,6 +29,7 @@ body {
   color: var(--texto-2);
   width: 400px;
   position: relative;
+  padding-left: 6px;
 }
 
 .introducao p::before {
@@ -50,20 +51,20 @@ body {
     display: none;
   }
 
-  .introducao h1{
+  .introducao h1 {
     font-size: 2rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     width: 30px;
   }
 
-  .introducao p::before{
+  .introducao p::before {
     font-size: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
   }
 
-  .introducao p{
+  .introducao p {
     font-size: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
